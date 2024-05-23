@@ -7,9 +7,6 @@ Comandos essenciais da Plataforma
 create-states.py
 
 
-Adiciona os estados do Brasil não cadastrados nas tabelas dos clientes
+        Adiciona os estados do Brasil não cadastrados nas tabelas dos clientes
 
-        - MODALIDADE:
-           SEMANAL 
-           QUINZENAL 
-           MENSAL 
+        
