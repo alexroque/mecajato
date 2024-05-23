@@ -23,6 +23,11 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 ## Comandos essenciais da Plataforma:
 
 
+### alter-user-password
+
+        Help: Altera a senha de um usuário de todos os schemas
+        Percorre todos os schemas onde é especificado um usuário para alteração da sua senha.
+        É também retirado o status de superusuário, de membro da equipe e o status Ativo.
 
 ### create-states
 
