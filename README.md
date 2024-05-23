@@ -9,7 +9,7 @@ create-states.py
 
 Adiciona os estados do Brasil não cadastrados nas tabelas dos clientes
 
- - MODALIDADE:
+        - MODALIDADE:
            SEMANAL 
            QUINZENAL 
            MENSAL 
