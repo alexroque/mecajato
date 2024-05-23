@@ -20,10 +20,11 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 - [ReDoc](http://localhost:8000/redoc/)
 
 
-Comandos essenciais da Plataforma
+## Comandos essenciais da Plataforma:
 
-create-states.py
+### create-states.py
 
 
         Adiciona os estados do Brasil não cadastrados nas tabelas dos clientes
+        Se o registro de país "Brasil" não existir, é criado automaticamente nesse comando
 
