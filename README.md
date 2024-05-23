@@ -22,7 +22,9 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
 ## Comandos essenciais da Plataforma:
 
-### create-states.py
+
+
+### create-states
 
 
         Adiciona os estados do Brasil não cadastrados nas tabelas dos clientes
