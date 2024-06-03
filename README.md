@@ -23,8 +23,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
 ### python manage.py change-tipo-posse
 
-        Help: Altera o tipo de posse das matrículas para "Arrendado sem especificação" as que tem a opção Área Arrendondada
-        como sim.
+        Help: Altera o tipo de posse das matrículas para "Arrendado sem especificação" as que tem a opção Área 
+        Arrendondada como sim.
 
         Percorre todos os schemas e verifica todas as matrículas que tem a opção área arredondada confirmada e altera a 
         opção tipo posse para "Arrendado sem especificação"
@@ -34,15 +34,15 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
         Help: Cria um registro no model CRDCInstrumentRequest, obtendo as conciliações exceto do mês corrente.
 
         Filtra o model CRDCInstrument obtendo os registros com o campo was_conciliated igual a False, ou seja, os não 
-        conciliados, exceto os registros do mês corrente, verifica os hashs válidos e faz a conciliação com a rota dada e 
-        os dados da api. Por fim, cria um registro no model CRDCInstrumentRequest com os valores obtidos.
+        conciliados, exceto os registros do mês corrente, verifica os hashs válidos e faz a conciliação com a rota dada
+        e os dados da api. Por fim, cria um registro no model CRDCInstrumentRequest com os valores obtidos.
 
 ### python manage.py compact-html
 
         Help: Compact html file losing extends django command
 
-        Compacta o arquivo html dado utilizando uma api que remove espaços em branco,  linhas em branco, comentários html, 
-        css, javascript e comentários django.
+        Compacta o arquivo html dado utilizando uma api que remove espaços em branco,  linhas em branco, comentários 
+        html, css, javascript e comentários django.
 
 ### python manage.py create_default_colums
 
@@ -62,8 +62,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
         Help: Command for create fast app
 
-        Cria um novo app chamado "accounts" onde há uma pasta chamada "app" que possibilita a criação de vários apps centralizados em um 
-        mesmo local. Pode ser utilizado quando há vários apps com objetivos semelhantes.
+        Cria um novo app chamado "accounts" onde há uma pasta chamada "app" que possibilita a criação de vários apps 
+        centralizados em um mesmo local. Pode ser utilizado quando há vários apps com objetivos semelhantes.
 
 ### python manage.py create-configs-company-profile
 
@@ -159,15 +159,17 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
         Help: Corrige as definições do model Person.
 
         Percorre os registros do model Person e verifica se os registros estão corretos conforme a sua 
-        definição e onde está sendo utilizado. Corrige as definições de Unidade Loja, Investida e Credora para seus devidos fins 
-        e o restante dos campos(ex: proprietário, emitente, avalista e os demais) são modificados para a definição de Cliente.
+        definição e onde está sendo utilizado. Corrige as definições de Unidade Loja, Investida e Credora para seus 
+        devidos fins e o restante dos campos(ex: proprietário, emitente, avalista e os demais) são modificados para 
+        a definição de Cliente.
 
 ### python manage.py migrate-product-cpr
 
-        Help: Popula o model DadosParcelamento e FormaPagamentoCPRFisica com os dados dos campos existentes no InstrumentoCredito.
+        Help: Popula o model DadosParcelamento e FormaPagamentoCPRFisica com os dados dos campos existentes no 
+        InstrumentoCredito.
 
-        Percorre o model InstrumentoCredito obtendo os dados de quantidade de parcelas e a forma de pagamento e popula os models
-        FormaPagamentoCPRFisica e DadosParcelamento com os respectivos dados.
+        Percorre o model InstrumentoCredito obtendo os dados de quantidade de parcelas e a forma de pagamento e popula 
+        os models FormaPagamentoCPRFisica e DadosParcelamento com os respectivos dados.
 
 
 ### python manage.py minificate-css
