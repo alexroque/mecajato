@@ -26,16 +26,16 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
         Help: Altera o tipo de posse das matrículas para "Arrendado sem especificação" as que tem a opção Área 
         Arrendondada como sim.
 
-        Percorre todos os schemas e verifica todas as matrículas que tem a opção área arredondada confirmada e altera a 
-        opção tipo posse para "Arrendado sem especificação"
+        Percorre todos os schemas e verifica todas as matrículas que tem a opção área arredondada confirmada e altera 
+        a opção tipo posse para "Arrendado sem especificação"
 
 ### python manage.py coliacao-crdc
 
         Help: Cria um registro no model CRDCInstrumentRequest, obtendo as conciliações exceto do mês corrente.
 
         Filtra o model CRDCInstrument obtendo os registros com o campo was_conciliated igual a False, ou seja, os não 
-        conciliados, exceto os registros do mês corrente, verifica os hashs válidos e faz a conciliação com a rota dada
-        e os dados da api. Por fim, cria um registro no model CRDCInstrumentRequest com os valores obtidos.
+        conciliados, exceto os registros do mês corrente, verifica os hashs válidos e faz a conciliação com a rota 
+        dada e os dados da api. Por fim, cria um registro no model CRDCInstrumentRequest com os valores obtidos.
 
 ### python manage.py compact-html
 
@@ -69,8 +69,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
         Help: Configura os campos que serão ocultados para cada empresa
 
-        Configura os campos do instrumento de crédito a serem ocultados para cada schema. Configura também as abas que 
-        serão ocultadas na tela do instrumento de crédito. 
+        Configura os campos do instrumento de crédito a serem ocultados para cada schema. Configura também as abas 
+        que serão ocultadas na tela do instrumento de crédito. 
 
 ### python manage.py create-configs-unique-company
 
@@ -83,8 +83,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
         Help: Cria novos tipos de CPR para migração lavoro
 
-        Cria novos modelos de documento para a migração da lavoro. Somente o título é criado, sem que se crie o nome do 
-        arquivo.  
+        Cria novos modelos de documento para a migração da lavoro. Somente o título é criado, sem que se crie o nome 
+        do arquivo.  
 
 
 ### python manage.py create-fast-app
@@ -134,8 +134,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
         Help: Adiciona os estados do Brasil não cadastrados nas tabelas dos clientes.
         
-        Pode se escolher em percorrer todos os schemas ou um schema específico. É adicionado todos os estados do Brasil,
-        ou os que estão em falta na tabela de UF.  
+        Pode se escolher em percorrer todos os schemas ou um schema específico. É adicionado todos os estados do 
+        Brasil, ou os que estão em falta na tabela de UF.  
         Se o registro de país "Brasil" não existir, é criado automaticamente nesse mesmo comando antes da criação dos
         estados.
 
@@ -168,8 +168,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
         Help: Popula o model DadosParcelamento e FormaPagamentoCPRFisica com os dados dos campos existentes no 
         InstrumentoCredito.
 
-        Percorre o model InstrumentoCredito obtendo os dados de quantidade de parcelas e a forma de pagamento e popula 
-        os models FormaPagamentoCPRFisica e DadosParcelamento com os respectivos dados.
+        Percorre o model InstrumentoCredito obtendo os dados de quantidade de parcelas e a forma de pagamento e 
+        popula os models FormaPagamentoCPRFisica e DadosParcelamento com os respectivos dados.
 
 
 ### python manage.py minificate-css
@@ -194,7 +194,8 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
 
         Help: Registra o model no admin 
 
-        Registra o model no admin do app passado como parâmetro. É necessário passar o app com o model(ex: aml.recebivel)
+        Registra o model no admin do app passado como parâmetro. É necessário passar o app com o model
+        (ex: aml.recebivel).
 
 ### python manage.py remove-crdc-registers
 
