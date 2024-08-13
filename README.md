@@ -3,13 +3,6 @@ Cadastro de clientes e carros com serviços de mecânica e lavajato.
 
 # picc
 
-## Documentação:
-
-Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
-
-- [Swagger](http://localhost:8000/swagger/)
-- [ReDoc](http://localhost:8000/redoc/)
-
 
 ## Comandos essenciais da Plataforma:
 
@@ -139,6 +132,14 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
         Se o registro de país "Brasil" não existir, é criado automaticamente nesse mesmo comando antes da criação dos
         estados.
 
+### python manage.py fix_mask_cpf_cnpj
+
+        help = 'Corrige a máscara do CPF e CNPJ dos registros de pessoas físicas que estão sem máscaras ou com máscaras erradas.'
+
+        Percorre a tabela de Person e coloca máscara em todos os CPFs e CNPJs com 11 e 14 caracteres respectivamente. Os documentos 
+        com tamanhos inválidos não são alterados.  
+
+
 ### python manage.py generate-int-code
 
         Help: Gera um código inteiro para o campo integer_code do model Client.
@@ -222,9 +223,22 @@ Acesse a documentação das APIs usando o Swagger ou ReDoc (/swagger ou /redoc):
         Verifica os registros do model Safra se existe registros duplicados com base no campo ano, deletando 
         os duplicados e mantendo o que foi criado primeiro.
 
+### python manage.py update-created-by-operation
+
+        Help: Faz o update dos campos created_by dos instrumentos que estão com esse campo nulo.
+
+        Percorre todos os schemas e verifica os instrumentos que tem o campo created_by nulo, verifica no leadtime
+        o campo user e atualiza os instrumentos com esses dados.
+        
 ### python manage.py update-notificados-monit-satelite
 
         Help: Atualiza o MonitoramentoSateliteV2Instrumento no campo notificados com uma lista de usuários. 
+        
+        Percorre o model MonitoramentoSateliteV2Instrumento limpando o campo notificados e inserindo os 
+        valores da lista dada no comando. Esta ação é executada somente no cluster também dado no comando.
+        Faz o update para todos os registros do model MonitoramentoSateliteV2Instrumento que contém o cluster dado.
+
+
         
         Percorre o model MonitoramentoSateliteV2Instrumento limpando o campo notificados e inserindo os 
         valores da lista dada no comando. Esta ação é executada somente no cluster também dado no comando.
